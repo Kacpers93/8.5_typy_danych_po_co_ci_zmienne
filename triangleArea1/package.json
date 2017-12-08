@@ -1,0 +1,35 @@
+{
+    "name": "8.4_poczatki_zawsze_sa_trudne",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm run test:html && npm run test:js",
+        "test:html": "nu-html-checker *.html",
+        "test:js": "jshint js/*.js",
+        "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
+        "build:sass": "sass --sourcemap=none --update sass:css",
+        "build:autoprefixer": "autoprefixer-cli css/style.css",
+        "build:clean": "node_modules/.bin/rimraf -f css/*.css css/*.map",
+
+        "watch": "parallelshell \"npm run watch:sassprefixer\" \"npm run watch:browser-sync\" ",
+
+
+        "watch:sassprefixer": "parallelshell \"onchange sass/style.scss -- sass --update sass:css\" \"onchange sass/style.scss -- autoprefixer-cli css/style.css\" ",
+
+
+        "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files \"css/*.css\" \"*.html\" "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "autoprefixer-cli": "^1.0.0",
+        "browser-sync": "^2.18.13",
+        "jshint": "^2.9.5",
+        "nu-html-checker": "^0.1.0",
+        "onchange": "^3.2.1",
+        "parallelshell": "^3.0.2",
+        "rimraf": "^2.6.2"
+    },
+    "devDependencies": {},
+    "description": ""
+}

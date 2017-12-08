@@ -1,0 +1,9 @@
+Auto prefix-cli
+Usage:
+autoprefixer-cli -o stye.prefixed.css style.css
+
+nu-html-checker
+Usage:
+nu-html-checker --api https://validator.nu/ *.html
+or
+nu-html-checker *.html

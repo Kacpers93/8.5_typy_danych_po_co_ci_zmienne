@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #9f9f9f;
+  color: black;
+  margin: 30px; }
+  body .box1 {
+    max-width: 400px;
+    text-align: left; }
+    body .box1 p {
+      font-size: 30px;
+      position: relative; }
+      body .box1 p input {
+        width: 70%;
+        height: 30px;
+        padding-top: 10px;
+        font-size: 20px;
+        position: absolute;
+        right: 0; }
+      body .box1 p button {
+        margin-top: 20px;
+        height: 30px;
+        padding: 0 20px;
+        color: black;
+        text-transform: uppercase;
+        transition: 0.2s; }
+        body .box1 p button:hover {
+          color: #00ebff; }
