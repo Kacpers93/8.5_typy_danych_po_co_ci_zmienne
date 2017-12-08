@@ -2,7 +2,7 @@ var triangleArea;
 var a = prompt('Type triangle\'s base:');
 var h = prompt('Type triangle\'s height:');
 
-triangleArea = a*h/2;
+triangleArea = a * h / 2;
 
 alert('triangle area is:' + triangleArea);
 

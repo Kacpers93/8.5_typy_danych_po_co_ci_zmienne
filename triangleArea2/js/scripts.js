@@ -4,7 +4,7 @@ var triangleArea = function() {
     var output = document.getElementById('output');
     
     if(isNaN(base) || isNaN(height)) {
-        output.textContent = "You did 2not enter numbers.";
+        output.textContent = "You did not enter numbers.";
     } else {
         var area = 2 / base * height;
         output.textContent = "Area = " + area;
