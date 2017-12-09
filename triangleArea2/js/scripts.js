@@ -1,9 +1,26 @@
-var triangleArea = function() {
-    var base = parseFloat(document.getElementById('base').value);
-    var height = parseFloat(document.getElementById('height').value);
-    var output = document.getElementById('output');
+
+
+
+
+
+
+
+var a = document.getElementById('base');
+var h = document.getElementById('height');
+var output = document.getElementById('output');
+
+
+function triangleArea () {
+    var base = parseFloat(a .value);
+    var height = parseFloat(h .value);
     
-    if(isNaN(base) || isNaN(height)) {
+    
+//    BEFORE:
+//    var base = parseFloat(document.getElementById('base').value);
+//    var height = parseFloat(document.getElementById('height').value);
+//    var output = document.getElementById('output');
+
+    if (isNaN(base) || isNaN(height)) {
         output.textContent = "You did not enter numbers.";
     } else {
         var area = 2 / base * height;
